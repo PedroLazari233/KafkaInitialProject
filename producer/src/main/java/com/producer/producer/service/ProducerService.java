@@ -18,8 +18,8 @@ public class ProducerService {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    public void sendMessage(String message) {
-        logger.info("Mensagem -> {}", message);
+    public void sendMessageToKafka(String message) {
+        logger.info("Message -> {}", message); //Terminal message
         this.kafkaTemplate.send(topicDemoTopic, message);
     }
 }
