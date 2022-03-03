@@ -1,10 +1,11 @@
-package com.producer.producer.resource;
+package com.kafkaDemo.producer.resource;
 
 
-import com.producer.producer.service.ProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.kafkaDemo.producer.service.ProducerService;
 
 @RestController
 @RequestMapping("/message")
