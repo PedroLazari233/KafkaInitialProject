@@ -7,3 +7,6 @@ spring:
 
 topic:
   demo-topic: topic_demo_kafka
+
+
+

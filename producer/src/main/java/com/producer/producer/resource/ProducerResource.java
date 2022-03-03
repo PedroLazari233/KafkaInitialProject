@@ -16,6 +16,6 @@ public class ProducerResource {
     @PostMapping
     public ResponseEntity<String> sendMessage(@RequestBody String message){
         producerService.sendMessageToKafka(message);
-        return ResponseEntity.ok().body("Message sent successfully: " + message); //HTTP response (code 200)
+        return ResponseEntity.ok().body(message); //HTTP response (code 200)
     }
 }
